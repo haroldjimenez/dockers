@@ -21,3 +21,5 @@ RUN alternatives --install /usr/bin/javac javac /usr/java/latest/bin/javac 20000
 
 RUN yum update
 RUN yum install -y maven
+ADD mvn/settings.xml /root/.m2/settings.xml
+
